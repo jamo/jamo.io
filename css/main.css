@@ -154,17 +154,17 @@ section {
   }
 }
 
+*/
 @media all and (min-width: 800px) {
   .flex-2 > * {
     padding: 10px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex: 2 0px;
+    flex;
   }
 }
 
-*/
 dd:before,
 dd:after {
   display: table;
