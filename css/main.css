@@ -49,7 +49,8 @@ img {
   -webkit-tap-highlight-color: transparent;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 section:after {
   content: '\0020';
@@ -64,22 +65,19 @@ section {
   min-height: 100%;
 }
 
-section#intro {
-  background: url(../img/poles.jpg) center center no-repeat #666;
-}
-section#projects {
+section:before #intro {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
 
-section#resume {
+section#projects:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
-section#more-about-me {
+
+section#resume:before {
+  background: url(../img/poles.jpg) center center no-repeat #666;
+}
+section#more-about-me:before {
   background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
-}
-
-section.full-height {
-  background: url(../img/poles.jpg) center center no-repeat #666;
 }
 
 .flex-2,
@@ -99,6 +97,24 @@ section {
   position: relative;
   top: auto;
   left: auto;
+}
+
+section:before {
+  background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
+}
+section:before {
+  content: "";
+  position: absolute;
+  height: 100%; width: 100%;
+  background-size: cover;
+  z-index: -1; /* Keep the background behind the content */
+  /* don't forget to use the prefixes you need */
+
+  -webkit-filter  : blur(2px);
+  -moz-filter  : blur(2px);
+  -ms-filter  : blur(2px);
+  -o-filter   : blur(2px);
+  filter    : blur(2px);
 }
 
 section {
@@ -150,17 +166,55 @@ section > * {
   }
 }
 
+
+dd:before,
+dd:after {
+  display: table;
+  content: " ";
+}
+
+
+/*
+dd:after {
+  clear: both;
+}
+*/
+
+
+@media (min-width: 768px) {
+  dt {
+    float: left;
+    overflow: hidden;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    text-align: right;
+  }
+  dd {
+    margin-left: 240px;
+  }
+}
+
+img:focus,
+img:hover {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  filter: none;
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+
 article header {
   margin-bottom: -0.3rem;
   font-weight: bold;
 }
 
-dl dt {
+dt {
   font-weight: bold;
 }
 
-dl dt:after {
-  content: ':';
+dt:after {
+  content: ': ';
 }
 
 article header h1,
