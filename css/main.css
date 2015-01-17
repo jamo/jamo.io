@@ -65,7 +65,7 @@ section {
   min-height: 100%;
 }
 
-section:before #intro {
+section#intro:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
 
@@ -78,6 +78,9 @@ section#resume:before {
 }
 section#more-about-me:before {
   background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
+}
+section:before {
+  background: url(../img/sf-boat.jpg) center center no-repeat #666;
 }
 
 .flex-2,
@@ -99,22 +102,28 @@ section {
   left: auto;
 }
 
-section:before {
-  background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
+article {
+  z-index: -2; /* Keep the background behind the content */
+  background: rgba(0, 0, 0, 0.65);
+  padding-bottom: 30px;
+  padding; 10px;
 }
+
 section:before {
   content: "";
   position: absolute;
   height: 100%; width: 100%;
   background-size: cover;
-  z-index: -1; /* Keep the background behind the content */
+  z-index: -3; /* Keep the background behind the content */
   /* don't forget to use the prefixes you need */
 
+  /*
   -webkit-filter  : blur(2px);
   -moz-filter  : blur(2px);
   -ms-filter  : blur(2px);
   -o-filter   : blur(2px);
   filter    : blur(2px);
+  */
 }
 
 section {
@@ -130,7 +139,7 @@ section {
 }
 
 section > * {
-  padding: 10px;
+  padding: 20px;
   flex: 1 100%;
   flex-wrap: nowrap;
 }
@@ -196,13 +205,6 @@ dd:after {
   }
 }
 
-img:focus,
-img:hover {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
-  filter: none;
-  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-}
 
 article header {
   margin-bottom: -0.3rem;
