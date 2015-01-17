@@ -109,7 +109,6 @@ section {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  font-weight: bold;
   flex-align: center;
 }
 
@@ -135,4 +134,10 @@ section article > * {
   padding: 10px;
   flex: 1 100%;
   flex-wrap: nowrap;
+}
+
+
+article header {
+  margin-bottom: -0.3rem;
+  font-weight: bold;
 }
