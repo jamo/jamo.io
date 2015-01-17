@@ -103,63 +103,50 @@ section {
 }
 
 article {
-  z-index: -2; /* Keep the background behind the content */
+  z-index: -2;
   background: rgba(0, 0, 0, 0.65);
   padding-bottom: 30px;
   padding; 10px;
 }
 
+/* background image */
 section:before {
   content: "";
   position: absolute;
   height: 100%; width: 100%;
   background-size: cover;
-  z-index: -3; /* Keep the background behind the content */
-  /* don't forget to use the prefixes you need */
-
-  /*
-  -webkit-filter  : blur(2px);
-  -moz-filter  : blur(2px);
-  -ms-filter  : blur(2px);
-  -o-filter   : blur(2px);
-  filter    : blur(2px);
-  */
+  z-index: -3;
 }
 
 section {
   /* Flex */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  flex-align: center;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
-
-section > * {
-  padding: 20px;
-  flex: 1 100%;
-  flex-wrap: nowrap;
-}
-
-
-
-
 
 .flex-2 {
   /* Flex */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  flex-align: center;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
 
+.flex-2 article{
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
 @media all and (min-width: 600px) {
   .flex-2 > * {
     padding: 10px;
@@ -170,12 +157,14 @@ section > * {
 @media all and (min-width: 800px) {
   .flex-2 > * {
     padding: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     flex: 2 0px;
-    flex-wrap: nowrap;
   }
 }
 
-
+*/
 dd:before,
 dd:after {
   display: table;
