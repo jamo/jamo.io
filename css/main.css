@@ -141,6 +141,13 @@ article header {
   font-weight: bold;
 }
 
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  font-weight: 100;
+}
+
 article header h1,
 article header h2,
 article header h3 {
