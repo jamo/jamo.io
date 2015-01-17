@@ -112,16 +112,5 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function(){
-        // vh fix for iOS7 (Not that it works well on that anyway)
-        $(window).resize(function(){
-          // count full-height
-          viewportUnitsBuggyfill.refresh();
-        });
-
-        $(window).trigger('resize');
-      });
-    </script>
   </body>
 </html>
