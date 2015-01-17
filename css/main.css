@@ -135,12 +135,20 @@ section > * {
   flex-align: center;
 }
 
-.flex-2 > * {
-  padding: 10px;
-  flex: 2 0px;
-  flex-wrap: nowrap;
+@media all and (min-width: 600px) {
+  .flex-2 > * {
+    padding: 10px;
+    flex: 1 auto;
+  }
 }
 
+@media all and (min-width: 800px) {
+  .flex-2 > * {
+    padding: 10px;
+    flex: 2 0px;
+    flex-wrap: nowrap;
+  }
+}
 
 article header {
   margin-bottom: -0.3rem;
