@@ -141,3 +141,15 @@ article header {
   margin-bottom: -0.3rem;
   font-weight: bold;
 }
+
+article header h1 {
+  z-index: 10;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 4rem;
+  max-width: 975px;
+  margin-top: 69px;
+}
+
+
+
