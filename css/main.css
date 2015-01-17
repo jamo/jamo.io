@@ -83,11 +83,18 @@ section:before {
   background: url(../img/sf-boat.jpg) center center no-repeat #666;
 }
 
-.flex-2,
+.flex-2 {
+  width: 100%;
+}
+
 section article {
   max-width: 1125px;
   margin: auto;
   width: 100%;
+}
+
+.col-md-4 {
+  width: 40%;
 }
 
 section {
@@ -107,6 +114,7 @@ article {
   background: rgba(0, 0, 0, 0.65);
   padding-bottom: 30px;
   padding; 10px;
+  display: block;
 }
 
 /* background image */
