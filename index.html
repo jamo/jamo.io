@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Jarmo Isotalo</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//code.jquery.com" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="canonical" href="http://jamo.io/" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+  </head>
+  <body>
+    <section id="intro" class="full-height">
+      <article class="">
+        <header>
+          <h2>Jarmo Isotalo</h2>
+        </header>
+        <p>Jarmo works as a Google inten at Google Zürich and studies Computer Science at University
+          of Helsinki.</p>
+      </article>
+    </section>
+    <section id="more-about-me" class="full-height">
+      <article>
+        <header>
+          <p>Hi, my name is Jarmo, you can call me Jamo.
+            I’m a third year Computer Science student from the University of Helsinki. For as long
+            as I can remember, I have spent most of my time with computers; programming and learning
+            new stuff.
+            I am passionate Ruby developer, who likes photography, sailing, skiing, cooking and
+            playing tennis.
+          </p>
+        </header>
+      </article>
+    </section>
+    <section id="more-about-me2" class="full-height">
+      <article>
+        <header>
+          <h3>Contact Information</h3>
+        </header>
+        <dl>
+          <dt>IRC</dt><dd>Jamo (IRCnet and Freenode)</dd>
+          <dt>Github</dt><dd>Jamox</dd>
+          <dt>Email</dt><dd>jarmo@isotalo.fi</dd>
+          <dt>Google+</dt><dd>jamo@isotalo.fi</dd>
+          <dt>Twitter</dt><dd>@JarmoIsotalo</dd>
+          <dt>Skype</dt><dd>jarmoisotalo</dd>
+          <dt>LinkedIn</dt><dd>jarmoisotalo</dd>
+        </dl>
+      </article>
+      <article>
+        <header>
+          <h3>Personal information</h3>
+        </header>
+        <dl>
+          <dt>Place of Birth</dt><dd>Helsinki, Finland</dd>
+          <dt>Language Skills</dt>
+          <dd>Finnish (native), English (excellent), Swedish (Good), German (Basics)</dd>
+        </dl>
+      </article>
+      <article>
+        <header>
+          <h3>Skills</h3>
+        </header>
+        <dl>
+          <dt>Good working skills</dt>
+          <dd>Ruby, Java, JavaScript, HTML, CSS, Bash</dd>
+          <dt>Basic working skills:</dt>
+          <dd>Python, C, CoffeeScript, LaTex </dd>
+          <dt>Familiar frameworks</dt>
+          <dd>Ruby on Rails, Sinatra, Backbone.js, Mustache.js, jQuery, Angular.js</dd>
+          <dt>Familiar databases </dt>
+          <dd>PostgreSQL, SQLite, MongoDB</dd>
+        </dl>
+        <dl>
+          <p>I have also experience with various apps and operating systems</p>
+          <dt>Advanced skills</dt>
+          <dd>Linux(debian derivatives), OSX and Windows(xp, vista, 7, windows server 2008R2), Google Docs, Open Office, MS Office, Adobe Photoshop </dd>
+          <dt>Good skills</dt>
+          <dd>Arch Linux, Windows server 2003</dd>
+        </dl>
+      </article>
+    </section>
+    <section id="projects" class="full-height">
+      <article>
+        <header>
+          <p>tmc</p>
+        </header>
+      </article>
+      <article>
+        <header>
+          <p>mooc</p>
+        </header>
+      </article>
+    </section>
+    <section id="resume" class="full-height">
+      <article>
+        <header>
+          <p>Job 1</p>
+        </header>
+      </article>
+      <article>
+        <header>
+          <p>Job 2</p>
+        </header>
+      </article>
+    </section>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        // vh fix for iOS7 (Not that it works well on that anyway)
+        $(window).resize(function(){
+          // count full-height
+          viewportUnitsBuggyfill.refresh();
+        });
+
+        $(window).trigger('resize');
+      });
+    </script>
+  </body>
+</html>
