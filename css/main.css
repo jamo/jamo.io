@@ -150,8 +150,9 @@ article header {
 dl dt {
   font-weight: bold;
 }
-dl dd {
-  font-weight: 100;
+
+dl dt:after {
+  content: ':';
 }
 
 article header h1,
