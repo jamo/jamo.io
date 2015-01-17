@@ -87,7 +87,7 @@ section:before {
   width: 100%;
 }
 
-section article {
+section main {
   max-width: 1125px;
   margin: auto;
   width: 100%;
@@ -109,7 +109,7 @@ section {
   left: auto;
 }
 
-article {
+main {
   z-index: -2;
   background: rgba(0, 0, 0, 0.65);
   padding-bottom: 30px;
@@ -141,6 +141,20 @@ section article {
   padding: 1em;
 }
 
+
+section article {
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-flow: row wrap;
+}
+
+section article main {
+  flex: 1 100%;
+  padding: 1em;
+}
 
 dd:before,
 dd:after {
