@@ -141,11 +141,21 @@ article header {
   font-weight: bold;
 }
 
-article header h1 {
+article header,
+article header h1,
+article header h2,
+article header h3 {
   z-index: 10;
   font-weight: 300;
   text-transform: none;
-  font-size: 4rem;
   max-width: 975px;
   margin-top: 69px;
+}
+
+article header h1 {
+  font-size: 4rem;
+}
+
+article header h2 {
+  font-size: 3rem;
 }
