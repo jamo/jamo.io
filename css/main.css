@@ -138,6 +138,7 @@ section {
 /* 1st. inner flex */
 section article {
   flex: 1 100%;
+  padding: 1em;
 }
 
 
