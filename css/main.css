@@ -182,6 +182,11 @@ article main {
   text-align: center;
 }
 
+article main dl,
+article main dd {
+  text-align: initial;
+}
+
 article header {
   margin-bottom: -0.3rem;
   font-weight: bold;
