@@ -178,6 +178,9 @@ dd:after {
   }
 }
 
+article main {
+  text-align: center;
+}
 
 article header {
   margin-bottom: -0.3rem;
@@ -199,7 +202,6 @@ article header h3 {
   z-index: 10;
   font-weight: 300;
   text-transform: none;
-  max-width: 975px;
 }
 
 article header h1 {
