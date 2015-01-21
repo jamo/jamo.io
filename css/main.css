@@ -18,10 +18,6 @@ header, hgroup, main, nav, section, summary {
   display: block;
 }
 
-img {
-  vertical-align: top;
-}
-
 body {
   font: 400 18px "Dosis", sans-serif;
   line-height: 1.5;
@@ -40,18 +36,17 @@ body {
   padding: 0 0 180px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-*, *:after, *:before {
+/*
+ * *, *:after, *:before {
   -webkit-tap-highlight-color: transparent;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*/
 
+/*
 section:after {
   content: '\0020';
   display: block;
@@ -59,24 +54,25 @@ section:after {
   clear: both;
   visibility: hidden;
 }
+*/
 
 section {
   height: 100%;
   min-height: 100%;
 }
 
-section#intro:before {
+#intro:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
 
-section#projects:before {
+#projects:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
 
-section#resume:before {
+#resume:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
-section#more-about-me:before {
+#more-about-me:before {
   background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
 }
 section:before {
@@ -132,29 +128,28 @@ section {
   display: -ms-flexbox;
   display: flex;
 
+/*
   flex-flow: row wrap;
-}
-
-/* 1st. inner flex */
-section article {
-  flex: 1 100%;
-  padding: 1em;
+*/
 }
 
 
-section article {
-  display: -webkit-flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+main {
   display: flex;
-
-  flex-flow: row wrap;
 }
 
-section article main {
-  flex: 1 100%;
+article.two-columns {
   padding: 1em;
+  flex: 1 50%;
+  flex-flow: row;
 }
+
+article {
+  padding: 1em;
+  flex-flow: column;
+  flex: 1 100%;
+}
+
 
 dd:before,
 dd:after {
@@ -189,6 +184,7 @@ dd:after {
 article header {
   margin-bottom: -0.3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 dt {
