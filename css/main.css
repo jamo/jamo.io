@@ -105,7 +105,7 @@ section {
   left: auto;
 }
 
-main {
+section > main {
   z-index: -2;
   background: rgba(0, 0, 0, 0.65);
   padding-bottom: 30px;
@@ -127,21 +127,19 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-
-/*
-  flex-flow: row wrap;
-*/
 }
 
 
-main {
+main.two-columns {
   display: flex;
+}
+.two-columns {
+  flex-flow: row;
 }
 
 article.two-columns {
   padding: 1em;
   flex: 1 50%;
-  flex-flow: row;
 }
 
 article {
@@ -186,7 +184,7 @@ article header {
   font-weight: bold;
   text-align: center;
 }
-
+article
 dt {
   font-weight: bold;
 }
