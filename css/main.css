@@ -186,6 +186,12 @@ dd:after {
     margin-left: 240px;
   }
 }
+dd a:link,
+dd a:visited,
+dd a:hover,
+dd a:active {
+    color: #FFFFFF;
+}
 
 article main {
   text-align: center;
