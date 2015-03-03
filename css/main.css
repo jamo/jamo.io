@@ -340,13 +340,13 @@ h2 {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.3s;
+  -webkit-animation: fadeIn 1.8s;
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
