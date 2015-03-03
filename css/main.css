@@ -121,6 +121,10 @@ section > * {
   flex: 1 100%;
 }
 
+section footer {
+  flex: 1 auto;
+}
+
 /* flex item */
 article {
   flex-flow: column;
@@ -263,6 +267,7 @@ h2 {
 }
 
 .scroll-down {
+  flex: 4 100%;
   position: absolute;
   margin: 0 auto;
   bottom: 30px;
