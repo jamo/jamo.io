@@ -296,7 +296,26 @@ h2 {
 
   border-top: 20px solid #f00;
 
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+
+  overflow:hidden;
+
 }
+
+.scroll-down:hover {
+  -webkit-transform:rotate(720deg);
+  -moz-transform:rotate(720deg);
+  -o-transform:rotate(720deg);
+}
+
 
 .scroll-down:before {
  /* content: "\00BB";
