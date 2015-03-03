@@ -154,6 +154,17 @@ main.two-columns > * {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
+  article main dl {
+  }
+  article main dd {
+    padding-bottom: 10px;
+  }
+  article main dd * {
+    text-decoration: none;
+  }
+  article main dt {
+    text-decoration: underline;
+  }
 }
 
 /* flex items (nested) */
@@ -165,15 +176,10 @@ main.two-columns > * {
     -webkit-flex-flow: row no-wrap;
     flex-flow: row no-wrap;
   }
-}
-
-dd:before,
-dd:after {
-  display: table;
-  content: " ";
-}
-
-@media (min-width: 768px) {
+  article main dl,
+  article main dd {
+    text-align: initial;
+  }
   dt {
     float: left;
     overflow: hidden;
@@ -187,6 +193,13 @@ dd:after {
     margin-left: 240px;
   }
 }
+
+dd:before,
+dd:after {
+  display: table;
+  content: " ";
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -198,18 +211,10 @@ article main {
   text-align: center;
 }
 
-article main dl,
-article main dd {
-  text-align: initial;
-}
 
 article header {
   margin-bottom: -0.3rem;
   text-align: center;
-}
-article
-dt {
-  /* TODO */
 }
 
 dt:after {
