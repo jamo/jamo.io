@@ -136,7 +136,6 @@ main.two-columns {
   display: -webkit-flex;
   display: flex;
 
-  font-weight: bold;
   text-align: center;
 }
 
