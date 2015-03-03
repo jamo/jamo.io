@@ -126,14 +126,24 @@ article {
   flex: 1 100%;
 }
 
-.two-column-item {
-  flex-flow: row;
-  display: flex;
-}
 
 .two-columns {
-  flex-flow: row;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
+.two-column-item {
+  flex-flow: column;
+  flex: 1 100%;
+}
+
 
 article.two-columns {
   padding: 1em;
