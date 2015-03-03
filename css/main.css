@@ -186,11 +186,11 @@ dd:after {
     margin-left: 240px;
   }
 }
-dd a:link,
-dd a:visited,
-dd a:hover,
-dd a:active {
-    color: #FFFFFF;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #FFFFFF;
 }
 
 article main {
