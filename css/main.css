@@ -41,10 +41,6 @@ section {
   min-height: 100%;
 }
 
-#intro:before {
-  background: url(../img/poles.jpg) center center no-repeat #666;
-}
-
 #projects:before {
   background: url(../img/poles.jpg) center center no-repeat #666;
 }
@@ -161,12 +157,11 @@ article main dd {
 
 article header {
   margin-bottom: -0.3rem;
-  font-weight: bold;
   text-align: center;
 }
 article
 dt {
-  font-weight: bold;
+  /* TODO */
 }
 
 dt:after {
