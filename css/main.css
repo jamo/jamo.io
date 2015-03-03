@@ -29,12 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-.main {
-  position: relative;
-  z-index: 1;
-  padding: 0 0 180px;
-}
-
 section {
   height: 100%;
   min-height: 100%;
@@ -55,18 +49,10 @@ section:before {
   background: url(../img/sf-boat.jpg) center center no-repeat #666;
 }
 
-.flex-2 {
-  width: 100%;
-}
-
 section main {
   max-width: 1125px;
   margin: auto;
   width: 100%;
-}
-
-.col-md-4 {
-  width: 40%;
 }
 
 section {
@@ -114,13 +100,9 @@ section {
   align-items: flex-start;
   align-content: center;
 }
-section > * {
+section main {
   padding: 10px;
   flex: 1 100%;
-}
-
-section footer {
-  flex: 1 auto;
 }
 
 /* flex item */
@@ -129,9 +111,9 @@ article {
   flex: 1 100%;
 }
 
-
 /* flex main (nested) */
-main.two-columns {
+/*main.two-columns {
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -145,32 +127,51 @@ main.two-columns > * {
   padding: 10px;
   flex: 1 100%;
 }
+body {
+  line-height: 200%;
+}
 
-@media all and (max-width: 600px) {
-
-  body {
-    line-height: 200%;
-  }
-
-  article {
-    padding: 3em;
-  }
-
+*/
+article {
   padding: 3em;
-  article header h1 {
-    font-size: 2rem;
-    line-height: 300%;
-    font-weight: 700;
-  }
+}
 
-  article header h2 {
-    font-weight: 500;
-    font-size: 2rem;
-  }
+article header h1 {
+  font-size: 2rem;
+  line-height: 300%;
+  font-weight: 700;
+}
+
+article header h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+/*
+dt {
+  float: left;
+  width: 150px;
+  white-space: nowrap;
+  clear: left;
+  text-align: right;
+}
+dd {
+  margin-left: 200px;
+}
+
+article.two-columns {
+  flex-flow: column wrap;
+}
+article main dl,
+article main dd {
+  text-align: initial;
+}
+*/
+@media all and (min-width: 600px) {
+
 }
 
 /* flex intems (nested) */
-@media all and (max-width: 800px) {
+/*@media all and (max-width: 850px) {
   article.two-column-item {
     flex: 1 auto;
   }
@@ -189,34 +190,11 @@ main.two-columns > * {
   article main dt {
     text-decoration: underline;
   }
-}
+}*/
 
 /* flex items (nested) */
-@media all and (min-width: 800px) {
-  article.two-columns {
-    flex-wrap: nowrap;
-  }
-  main.two-columns {
-    -webkit-flex-flow: row no-wrap;
-    flex-flow: row no-wrap;
-  }
-  article main dl,
-  article main dd {
-    text-align: initial;
-  }
-  dt {
-    float: left;
-    overflow: hidden;
-    width: 220px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    clear: left;
-    text-align: right;
-  }
-  dd {
-    margin-left: 240px;
-  }
-}
+/*@media all and (min-width: 800px) {
+}*/
 
 dd:before,
 dd:after {
