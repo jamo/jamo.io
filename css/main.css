@@ -153,10 +153,12 @@ main.two-columns > * {
   article header h1 {
     font-size: 2rem;
     line-height: 300%;
+    font-weight: 700;
   }
 
   article header h2 {
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
   }
 }
 
