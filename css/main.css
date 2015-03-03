@@ -111,6 +111,21 @@ article {
   flex: 1 100%;
 }
 
+article {
+  padding: 3em;
+}
+
+article header h1 {
+  font-size: 2rem;
+  line-height: 300%;
+  font-weight: 700;
+}
+
+article header h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 /* flex main (nested) */
 /*main.two-columns {
 
@@ -131,43 +146,36 @@ body {
   line-height: 200%;
 }
 
-*/
-article {
-  padding: 3em;
-}
-
-article header h1 {
-  font-size: 2rem;
-  line-height: 300%;
-  font-weight: 700;
-}
-
-article header h2 {
-  font-weight: 500;
-  font-size: 2rem;
-}
-/*
-dt {
-  float: left;
-  width: 150px;
-  white-space: nowrap;
-  clear: left;
-  text-align: right;
-}
-dd {
-  margin-left: 200px;
-}
-
 article.two-columns {
   flex-flow: column wrap;
 }
+*/
 article main dl,
 article main dd {
   text-align: initial;
 }
-*/
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
+  section main {
+    max-width: 700px;
+  }
+}
 
+@media all and (min-width: 475px) {
+  dt {
+    float: left;
+    max-width: 50%;
+    min-width: 30%;
+    white-space: nowrap;
+    clear: left;
+    text-align: right;
+  }
+  dd {
+    rargin-left: 130px;
+  }
+  article main dl,
+  article main dd {
+    text-align: center;
+  }
 }
 
 /* flex intems (nested) */
@@ -295,8 +303,6 @@ h2 {
   -moz-animation-timing-function: ease;
   animation-timing-function: ease;
 }
-
-
 
 @-webkit-keyframes fadeIn {
   0% {
