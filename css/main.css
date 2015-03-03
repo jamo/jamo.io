@@ -89,6 +89,7 @@ section > main {
 }
 
 article {
+  padding: 3em;
   background: rgba(0, 0, 0, 0.65);
   margin: 10px 10px 10px 10px;
 }
@@ -122,7 +123,6 @@ section > * {
 
 /* flex item */
 article {
-  padding: 1em;
   flex-flow: column;
   flex: 1 100%;
 }
@@ -234,6 +234,14 @@ article header h1 {
 
 article header h2 {
   font-size: 3rem;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
+  width: 200px;
+  margin: 1em;
 }
 
 .scroll-down {
