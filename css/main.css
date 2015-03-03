@@ -103,14 +103,31 @@ section {
   align-items: flex-start;
   align-content: center;
 }
-section main {
-  padding: 10px;
-  flex: 1 100%;
-}
-
 /* flex item */
 article {
   flex-flow: column;
+  flex: 1 100%;
+}
+
+/*Nexted outer flex */
+.no-background {
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+/* nested inner flex */
+footer {
+}
+
+section main {
+  padding: 10px;
   flex: 1 100%;
 }
 
@@ -260,6 +277,7 @@ h2 {
 }
 
 .scroll-down {
+  /*
   flex: 4 100%;
   position: absolute;
   margin: 0 auto;
@@ -269,10 +287,19 @@ h2 {
   height: 50px;
   border-radius: 50%;
   border: 1px solid #ff7b00;
+  */
+
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+
 }
 
 .scroll-down:before {
-  content: "\00BB";
+ /* content: "\00BB";
   line-height: 1;
   display: block;
   position: absolute;
@@ -284,11 +311,13 @@ h2 {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+  */
 }
 
 .scroll-down:hover,
 .scroll-down:focus {
-  border-color: #000;
+ /* border-color: #000;
+  */
 }
 
 .fadeIn {
