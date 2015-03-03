@@ -144,6 +144,22 @@ main.two-columns > * {
   flex: 1 100%;
 }
 
+@media all and (max-width: 600px) {
+
+  body {
+    line-height: 200%;
+  }
+
+  article header h1 {
+    font-size: 2rem;
+    line-height: 300%;
+  }
+
+  article header h2 {
+    font-size: 1rem;
+  }
+}
+
 /* flex intems (nested) */
 @media all and (max-width: 800px) {
   article.two-column-item {
@@ -220,19 +236,19 @@ dt:after {
   content: ': ';
 }
 
-article header h1,
-article header h2,
-article header h3 {
+h1,
+h2,
+h3 {
   z-index: 10;
   font-weight: 300;
   text-transform: none;
 }
 
-article header h1 {
+h1 {
   font-size: 4rem;
 }
 
-article header h2 {
+h2 {
   font-size: 3rem;
 }
 
