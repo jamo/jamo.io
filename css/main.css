@@ -170,31 +170,9 @@ article.two-columns {
   flex-flow: column wrap;
 }
 */
-article main dl,
-article main dd {
-  text-align: initial;
-}
 @media all and (min-width: 800px) {
   section main {
     max-width: 700px;
-  }
-}
-
-@media all and (min-width: 475px) {
-  dt {
-    float: left;
-    max-width: 50%;
-    min-width: 30%;
-    white-space: nowrap;
-    clear: left;
-    text-align: right;
-  }
-  dd {
-    rargin-left: 130px;
-  }
-  article main dl,
-  article main dd {
-    text-align: center;
   }
 }
 
@@ -224,6 +202,41 @@ article main dd {
 /*@media all and (min-width: 800px) {
 }*/
 
+
+dd:before,
+dd:after {
+  display: table;
+  content: " ";
+}
+
+@media (min-width: 768px) {
+  dt {
+    float: left;
+    overflow: hidden;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    text-align: right;
+  }
+  dd {
+    margin-left: 240px;
+  }
+}
+
+article main dl,
+article main dd {
+  text-align: initial;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt:after {
+  content: ': ';
+}
+
 dd:before,
 dd:after {
   display: table;
@@ -241,14 +254,9 @@ article main {
   text-align: center;
 }
 
-
 article header {
   margin-bottom: -0.3rem;
   text-align: center;
-}
-
-dt:after {
-  content: ': ';
 }
 
 h1,
