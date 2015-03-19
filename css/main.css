@@ -70,12 +70,12 @@ section {
 section > main {
   z-index: 0;
   padding-bottom: 30px;
-  padding; 10px;
 }
 
 article {
   background: rgba(0, 0, 0, 0.65);
   margin: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 5px rgba(8, 7, 7, 0.19); // TODO(jamo) now we have shadow also for the arrow thingy... :/
 }
 article.no-background {
   background: rgba(0, 0, 0, 0);
@@ -127,12 +127,12 @@ footer {
 }
 
 section main {
-  padding: 10px;
+  padding: 0px;
   flex: 1 100%;
 }
 
 article {
-  padding: 3em;
+  padding: 3em 1em 3em 1em;
 }
 
 article header h1 {
@@ -251,7 +251,7 @@ a:active {
 }
 
 article main {
-  text-align: center;
+  text-align: initial;
 }
 
 article header {
@@ -282,6 +282,21 @@ h2 {
   box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
   width: 200px;
   margin: 1em;
+}
+
+.logo {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.logo:hover  {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
 }
 
 .scroll-down {
