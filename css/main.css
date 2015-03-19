@@ -222,6 +222,10 @@ dd:after {
   dd {
     margin-left: 240px;
   }
+
+  article main {
+    text-align: center;
+  }
 }
 
 article main dl,
@@ -250,18 +254,12 @@ a:active {
   color: #FFFFFF;
 }
 
-article main {
-  text-align: initial;
-}
-
 article header {
   margin-bottom: -0.3rem;
   text-align: center;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   z-index: 10;
   font-weight: 300;
   text-transform: none;
