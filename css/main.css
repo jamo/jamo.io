@@ -300,18 +300,6 @@ h2 {
 }
 
 .scroll-down {
-  /*
-  flex: 4 100%;
-  position: absolute;
-  margin: 0 auto;
-  bottom: 30px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #ff7b00;
-  */
-
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -337,29 +325,6 @@ h2 {
   -webkit-transform:rotate(720deg);
   -moz-transform:rotate(720deg);
   -o-transform:rotate(720deg);
-}
-
-
-.scroll-down:before {
- /* content: "\00BB";
-  line-height: 1;
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -9px 0 0 -4px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  */
-}
-
-.scroll-down:hover,
-.scroll-down:focus {
- /* border-color: #000;
-  */
 }
 
 .fadeIn {
