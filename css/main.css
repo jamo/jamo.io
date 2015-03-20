@@ -208,7 +208,21 @@ dd:after {
   content: " ";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
+  dt {
+    float: left;
+    overflow: hidden;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    text-align: right;
+  }
+  dd {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 550px) {
   dt {
     float: left;
     overflow: hidden;
@@ -224,6 +238,21 @@ dd:after {
 
   article main {
     text-align: initial;
+  }
+}
+
+@media (min-width: 768px) {
+  dt {
+    float: left;
+    overflow: hidden;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    text-align: right;
+  }
+  dd {
+    margin-left: 240px;
   }
 }
 
