@@ -109,7 +109,7 @@ article {
   flex: 1 100%;
 }
 
-/*Nexted outer flex */
+/*Nexted outer flex for the arrow thingy */
 .no-background {
   display: -webkit-flex;
   display: -webkit-flex;
@@ -121,9 +121,6 @@ article {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-}
-/* nested inner flex */
-footer {
 }
 
 section main {
