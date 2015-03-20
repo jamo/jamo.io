@@ -223,7 +223,7 @@ dd:after {
   }
 
   article main {
-    text-align: center;
+    text-align: initial;
   }
 }
 
@@ -254,8 +254,11 @@ a:active {
 }
 
 article header {
-  margin-bottom: -0.3rem;
   text-align: center;
+}
+
+article main {
+  text-align: initial;
 }
 
 h1,h2,h3 {
