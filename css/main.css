@@ -35,18 +35,30 @@ section {
   height: 800px;
 }
 
+section:before {
+  background: url(../img/sf-boat.jpg) center center;
+}
+section:before {
+  background-size: cover !important;
+}
+#more-about-me:before {
+  background: url(../img/sandhamn_natt.jpg) center center;
+}
+#information:before {
+  background: url(../img/umbrellas.jpg) center center;
+}
+#skills:before {
+  background: url(../img/skumppa.jpg) center center;
+}
 #projects:before {
-  background: url(../img/poles.jpg) center center no-repeat #666;
+  background: url(../img/sf_tram.jpg) center center;
+}
+#previous-projects:before {
+  background: url(../img/sandhamn_boj.jpg) center center;
 }
 
 #resume:before {
-  background: url(../img/poles.jpg) center center no-repeat #666;
-}
-#more-about-me:before {
-  background: url(../img/hot-air-balloon.jpg) center center no-repeat #666;
-}
-section:before {
-  background: url(../img/sf-boat.jpg) center center no-repeat #666;
+  background: url(../img/poles.jpg) center center;
 }
 
 section main {
