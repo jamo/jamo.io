@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Jarmo Isotalo</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//code.jquery.com" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="canonical" href="http://jamo.io/" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <section id="testmycode" class="full-height">
+      <main>
+        <article>
+          <header>TestMyCode -project</header>
+          <main>
+          <h3>What is TestMyCode -project?</h3>
+          <p>Test My Code (“TMC”) is a suite of tools that has been designed to make the life of
+          programming instructors and students easier, as well as provide beneficial input for
+          computing education researchers. See <a href="http://testmycode.github.io">testmycode.github.io</a>
+          for more details.</p>
+
+          <h3>Background in the TestMyCode -project</h3>
+          <p>The TestMyCode project was started in early 2011 as a software engineering lab project
+          initiated by the Rage-research-group at the University of Helsinki dept. of computer
+          science. The initial foundation contained of the:
+          <dd>
+            <dl>TMC-Server</dl>
+            <dt>Ruby on Rails 3.x server providing API for the TMC-NetBeans to download exercise
+            templates and submit exercises to be graded automatically by our systems, as well as some basic
+            bookkeeping properties for teachers.</dt>
+            <dl>TMC-NetBeans</dl>
+            <dt>NetBeans plugin for downloading exercise templates provided by the TMC-Server as
+            well as submitting exercise to be graded.</dt>
+          </dd>
+          </p>
+
+          <p>
+          Soon after the software lab course had completed one of the project instructors
+          <a href="https://github.com/mpartel">mpartel</a> started taking care; maintaining and
+          developing the TMC-project.
+
+          Soon most if not all of the code was rewritten and multiple important security
+          improvements was done.
+
+          The most important improvement regarding security and thus providing steady foundation for
+          this project is how the submissions are run and graded by the service.
+
+          The grading is basically done by unit tests (with out special flavour); test being
+          provided by the course instructors....
+
+          However as we are executing arbitrary code of our students and other participants for the
+          course we cannot neglect the security of malicious code.
+
+          Thus we moved from the initial solution of executing code with "security" provided by Java
+          Security Manager to having real sandboxes.
+
+          Thus became TMC-Sandbox. TMC-Sandbox is a modified UML linux sandbox. Not going to deep
+          details here. To find more about it, please see:
+          <a href="https://github.com/testmycode/tmc-sandbox">github.com/testmycode/tmc-sandbox</a>.
+          </p>
+
+
+          <h3>My role and background in the TestMyCode -project?</h3>
+          <p>
+          I stared getting interested of the project in early 2012 and soon after (fall 2012) started
+          committing to the project.
+          Initially just squashing bugs of the TMC-Netbeans and our edu-test-utls (some nasty
+          encoding issues with osx...).
+
+          And then slowly moving towards TMC-server and our other products.
+
+          Early 2013 I took part in software engineering lab project at UH. In the project we (me
+          and the others (github.com/rase- and github.com/kviiri) were supposed to add support for
+          the C programming language. (initially we had only support for Java (and and maven).
+          Thanks to nice design, adding support for the new language didn't require any
+          architectural changes and still we had the chance to dig deep into TMC-servers core.
+
+          We ended up quickly adding support for Makefile based exercises in general (just only C).
+
+          We had the whole spring 2013 to use and during this time we did various other
+          improvements. To highlight one, we added support for paste's
+          (e.g. user can share her code straight from comfort of her editor and get shareable link
+          to her submission.
+          This feature has proven itself to be one of the most important features for TA's and
+          volunteers helping students remotely with the programming assignments.
+
+
+          After this project I continued actively contributing to the TMC-project and soon achieved
+          status of the second "owner" <!--bad term--> of the TMC-project.
+
+          Not long after this I became also the second maintainer of our service providing.
+          (Support for our users (course instructors and TA's) and I got into maintaining server we
+          run the application.
+
+          Ever since I'v been on-call for tmc.mooc.fi/. Our SLA is, well, best effort basically.
+          </p>
+          <h4>Our stack</h4>
+          <p>
+          Partially due to the nature of what we are doing and especially the TMC-Sandbox we have a
+          few physical machines from a DC. Where we run our products on KVM virtual machines.
+          </p>
+
+
+
+          <!--
+            edu-test-utils provides support for finding and invoking methods with Java reflection (just making it
+            easier for course instructors to provide tests which will always compile even when
+            students haven't yet declared the class/methods testes.). And provides support for easily
+            accessing stdout and mocking stdin of the Java programs to be tested.
+          -->
+
+
+
+          </p>
+
+
+            I also like cooking and play tennis.
+          </main>
+        </article>
+        <article class="no-background">
+          <a class="fadeIn scroll-down" href="#information"></a>
+        </article>
+      </main>
+    </section>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
