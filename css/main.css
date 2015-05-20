@@ -13,6 +13,10 @@ body {
   margin: 0;
 }
 
+p:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
 article, aside, details, figcaption, figure, footer,
 header, hgroup, main, nav, section, summary {
   display: block;
@@ -143,7 +147,7 @@ section main {
 }
 
 article {
-  padding: 3em 1em 3em 1em;
+  padding: 3rem 1rem 3rem 1rem;
 }
 
 article header h1 {
@@ -296,6 +300,7 @@ a:active {
 
 article header {
   text-align: center;
+  font-size: 1.4rem;
 }
 
 article main {
