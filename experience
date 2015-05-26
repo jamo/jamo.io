@@ -9,7 +9,7 @@
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//code.jquery.com" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css?t=1" type="text/css" />
     <link rel="canonical" href="http://jamo.io/" />
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -43,7 +43,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#google-intern"></a>
         </article>
       </main>
     </section>
@@ -56,13 +56,12 @@
           </header>
           <main>
             <p>
-              Workin in corp telephony team, work consist mostly of programming.
-              TODO
+              Working in corp telephony team (TelOps), work consisted mostly of programming in Java.
             </p>
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#rage-developer"></a>
         </article>
       </main>
     </section>
@@ -109,7 +108,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#rage-research-assistant"></a>
         </article>
       </main>
     </section>
@@ -130,7 +129,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#research-assistant-hiit"></a>
         </article>
       </main>
     </section>
@@ -148,7 +147,6 @@
               and conducting experiments in a real super market.
             </p>
             <p>
-              TODO
               The system for conducting research and tests was rather complex; it consisted of a Arduino controlling
               two vibration motors, two androud phones also used for vibration, Kinect for eye movement detection.
               Directions were given remotely from a simple web interface which lead to broadcasting of UDP packets
@@ -157,7 +155,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#teaching"></a>
         </article>
       </main>
     </section>
@@ -200,7 +198,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#teaching-moocfi"></a>
         </article>
       </main>
     </section>
@@ -223,7 +221,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#teaching-paja"></a>
         </article>
       </main>
     </section>
@@ -250,7 +248,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#teaching-ta"></a>
         </article>
       </main>
     </section>
@@ -280,7 +278,7 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#lectures"></a>
         </article>
       </main>
     </section>
@@ -316,11 +314,11 @@
           </main>
         </article>
         <article class="no-background">
-          <a class="fadeIn scroll-down" href="#more-about-me"></a>
+          <a class="fadeIn scroll-down" href="#helsinginenergia"></a>
         </article>
       </main>
     </section>
-    <section id="lectures" class="full-height">
+    <section id="helsinginenergia" class="full-height">
       <main>
         <article>
           <header>
