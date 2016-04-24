@@ -1,17 +1,19 @@
 function resizeFull() {
-  $(".full-height").css("min-height", $(window).height() + "px");
+  var fullHeight = document.getElementsByClassName("full-height");
+  var i = 0;
+  for (; i < fullHeight.length; i++) {
+    fullHeight[i].style.minHeight = window.innerHeight+"px";
+  }
 }
 
-$( document ).ready(function() {
+window.addEventListener("resize", function() {
   resizeFull();
 });
+resizeFull();
 
-$( window ).resize(function() {
-  resizeFull();
-});
-
-
-$(function() {
+// The slow scrolldown.
+/*
+ * $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -25,3 +27,4 @@ $(function() {
     }
   });
 });
+*/

@@ -23,7 +23,7 @@ header, hgroup, main, nav, section, summary {
 }
 
 body {
-  font: 400 16px "Dosis", sans-serif;
+  font: 400 16px Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   line-height: 1.5;
   background: #fff;
   color: #fff;
@@ -33,16 +33,16 @@ body {
   overflow-x: hidden;
 }
 
-section {
+article {
   height: 100%;
   min-height: 100%;
   height: 800px;
 }
 
-section:before {
+article:before {
   background: url(../img/sf-boat.jpg) center center;
 }
-section:before {
+article:before {
   background-size: cover !important;
 }
 #more-about-me:before {
@@ -61,6 +61,11 @@ section:before {
   background: url(../img/sandhamn_boj.jpg) center center;
 }
 
+#experience:before {
+  //sf_hill_street
+  //background: url(../img/sf-bridge.jpg) center center;
+  background: url(../img/sf_hill_street.jpg) center center;
+}
 #resume:before {
   background: url(../img/poles.jpg) center center;
 }
@@ -68,14 +73,22 @@ section:before {
 ul {
   list-style: none;
 }
+li {
+  padding-left: 1rem;
+}
+li:not(:last-child) {
+  padding-bottom: 1rem;
+}
 
-section main {
+article section {
   max-width: 1125px;
   margin: auto;
   width: 100%;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
-section {
+article {
   /* Background image */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -87,24 +100,24 @@ section {
   left: auto;
 }
 
-section > main {
+section > section {
   z-index: 0;
   padding-bottom: 30px;
 }
 
-article {
+section {
   background: rgba(0, 0, 0, 0.65);
   margin: 10px 10px 10px 10px;
   box-shadow: 5px 5px 5px rgba(8, 7, 7, 0.19);
 }
 
-article.no-background {
+section.no-background {
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
 }
 
 /* background image */
-section:before {
+article:before {
   content: "";
   position: absolute;
   height: 100%; width: 100%;
@@ -113,7 +126,7 @@ section:before {
 }
 
 /* Outer flex */
-section {
+article {
   display: -webkit-flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -145,82 +158,31 @@ article {
   align-content: center;
 }
 
-section main {
+section section {
   padding: 0px;
   flex: 1 100%;
 }
 
-article {
+section {
   padding: 3rem 1rem 3rem 1rem;
 }
 
-article header h1 {
+section header h1 {
   font-size: 2rem;
   line-height: 300%;
   font-weight: 700;
 }
 
-article header h2 {
+section header h2 {
   font-weight: 500;
   font-size: 2rem;
 }
 
-/* flex main (nested) */
-/*main.two-columns {
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  text-align: center;
-}
-
-main.two-columns > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-body {
-  line-height: 200%;
-}
-
-article.two-columns {
-  flex-flow: column wrap;
-}
-*/
 @media all and (min-width: 800px) {
-  section main {
+  article section {
     max-width: 700px;
   }
 }
-
-/* flex intems (nested) */
-/*@media all and (max-width: 850px) {
-  article.two-column-item {
-    flex: 1 auto;
-  }
-  main.two-columns {
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-  }
-  article main dl {
-  }
-  article main dd {
-    padding-bottom: 10px;
-  }
-  article main dd * {
-    text-decoration: none;
-  }
-  article main dt {
-    text-decoration: underline;
-  }
-}*/
-
-/* flex items (nested) */
-/*@media all and (min-width: 800px) {
-}*/
-
 
 dd:before,
 dd:after {
@@ -256,7 +218,7 @@ dd:after {
     margin-left: 240px;
   }
 
-  article main {
+  article section {
     text-align: initial;
   }
 }
@@ -276,8 +238,8 @@ dd:after {
   }
 }
 
-article main dl,
-article main dd {
+article section dl,
+article section dd {
   text-align: initial;
 }
 
@@ -307,7 +269,7 @@ article header {
   font-size: 1.4rem;
 }
 
-article main {
+article section {
   text-align: initial;
 }
 
